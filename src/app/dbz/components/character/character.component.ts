@@ -10,5 +10,10 @@ export class CharacterComponent {
   public personaje: Character = {
     name: '',
     power: 0
+  };
+
+  emitCharacter():void{
+    console.log(this.personaje);
+
   }
 }
