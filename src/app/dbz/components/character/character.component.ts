@@ -17,11 +17,13 @@ public onNewCharacter: EventEmitter<Character> = new EventEmitter();
   };
 
   emitCharacter():void{
+// Manera de crear un breakpoint
+    debugger;
+
     console.log(this.personaje);
     if (this.personaje.name.length === 0) return ;
 
     this.onNewCharacter.emit(this.personaje);
-    this.personaje.name = '';
-    this.personaje.power= 0;
+    this.personaje = {name: '', power: 0}
   }
 }
