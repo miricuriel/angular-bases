@@ -23,4 +23,10 @@ public characters: Character[] = [{
   power: 54434
 }];
 
+onNewCharacter(character: Character):void{
+  console.log('MainPage');
+  console.log(character);
+
+
+}
 }
