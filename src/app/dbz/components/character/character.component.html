@@ -1,7 +1,9 @@
 <h4>Agrega Personajes</h4>
 <form class="row">
-  <input type="text" class="form-control mb-2" placeholder="Nombre">
-  <input type="text" class="form-control mb-2" placeholder="Poder">
+  <!-- *Al usar [(ngModel)] & me de este error ERROR Error: NG01352 debo usar el atributo NAME-->
+  <input type="text" [(ngModel)]="personaje.name" name="name" class="form-control mb-2" placeholder="Nombre">
+  <input type="number" [(ngModel)]="personaje.power" name="power" class="form-control mb-2" placeholder="Poder">
   <button type="submit" class="btn btn-primary">Agregar</button>
 
+  <pre>{{personaje}}</pre>
 </form>
