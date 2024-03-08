@@ -2,7 +2,7 @@
 
 <div class="row">
   <div class="col">
-    <app-dbz-list [characterList]="dbzService.characters" (onDeleteCharacter)="dbzService.onDeleteCharacter($event)">
+    <app-dbz-list [characterList]="dbzService.characters" (onDeleteCharacter)="dbzService.deleteCharacteById($event)">
     </app-dbz-list>
 
   </div>
