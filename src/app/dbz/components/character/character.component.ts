@@ -18,7 +18,7 @@ public onNewCharacter: EventEmitter<Character> = new EventEmitter();
 
   emitCharacter():void{
 // Manera de crear un breakpoint
-    debugger;
+    // debugger;
 
     console.log(this.personaje);
     if (this.personaje.name.length === 0) return ;
